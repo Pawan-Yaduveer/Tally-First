@@ -1,0 +1,83 @@
+/* Reset & Background */
+body {
+  background-color: #E5E5E5; /* Light grey bg similar to Figma canvas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Standard UI font */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Main Card */
+.card {
+  background: #FFFFFF;
+  width: 370px; /* Estimated from Figma screenshot proportions */
+  padding: 16px; /* Explicitly visible in screenshot inspector */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Rows (Label + Checkbox) */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.row:hover {
+  background-color: #f9f9f9; /* Subtle hover effect */
+  border-radius: 4px;
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Divider Line */
+.divider {
+  border: none;
+  border-top: 1px solid #E0E0E0;
+  margin: 5px 0;
+}
+
+/* Custom Checkbox Styling */
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #2469F6; /* The blue check color from screenshot */
+  border-radius: 4px;
+}
+
+/* Done Button */
+.done-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFD84D; /* Matches the yellow in screenshot */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.done-btn:hover {
+  background-color: #FFCE22; /* Slightly darker on hover */
+}
